@@ -6,11 +6,12 @@ import {Component03Component} from "./component03/component03.component";
 import {Component04Component} from "./component04/component04.component";
 import {Component05Component} from "./component05/component05.component";
 import {Component06Component} from "./component06/component06.component";
+import {Component07Component} from "./component07/component07.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, Component01Component, Component02Component, Component03Component, Component04Component, Component05Component, Component06Component],
+  imports: [RouterOutlet, Component01Component, Component02Component, Component03Component, Component04Component, Component05Component, Component06Component, Component07Component],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
