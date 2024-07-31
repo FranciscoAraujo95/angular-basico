@@ -1,3 +1,10 @@
 <h1>{{ name }}</h1>
+<h1>{{ city }}</h1>
 
-<input type="text" [(ngModel)]="name">
+<form>
+  <input type="text" name="name" [(ngModel)]="name" placeholder="Name">
+  <hr>
+  <input type="text" name="city" [(ngModel)]="city" placeholder="City">
+</form>
+
+<!-- If you'll use these type of elements inside forms, specially if you have more than one input, you have to use the name attribute so the program may know these are two differents things -->

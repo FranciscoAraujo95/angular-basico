@@ -12,5 +12,6 @@ export class Component09Component {
 
   //Variable
   name: string = "";
+  city: string = "";
 
 }
