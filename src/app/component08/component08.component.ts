@@ -15,4 +15,7 @@ export class Component08Component {
   //Vector
   names: string[] = ["Khal Drogo", "Arya Stark", "Viserys Targaryen", "Sir Arthur Dayne"];
 
+  //Language
+  language: string = "HTML";
+
 }
