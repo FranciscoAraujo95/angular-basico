@@ -9,4 +9,8 @@ import { Component } from '@angular/core';
 })
 export class Component11Component {
 
+  //Variables
+  name: string;
+  idade: number = null;
+
 }

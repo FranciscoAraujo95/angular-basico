@@ -1,0 +1,14 @@
+form {
+  width: 500px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+input {
+  margin-bottom: .8rem;
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2), 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 0 rgba(0, 0, 0, 0.12);
+}
+
+input[type="button"] {
+  margin: 0 5px;
+}
