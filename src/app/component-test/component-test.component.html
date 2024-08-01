@@ -1,0 +1,42 @@
+<input (click)="message()" type="button" value="click here">
+
+<input type="text" [(ngModel)]="name" placeholder="Name" class="form-control">
+<input type="number" [(ngModel)]="age" placeholder="Age" class="form-control">
+
+<h1>
+  Olá, meu nome é {{ name }} e eu tenho {{ age }} anos.
+</h1>
+
+<hr>
+
+<input (click)="acao()" type="button" value="click me">
+<div *ngIf="condition" class="square"></div>
+
+<hr>
+
+<ul>
+  <li *ngFor="let name of names">
+    {{ name }}
+  </li>
+</ul>
+
+<hr>
+
+<input type="text" placeholder="Digite sua linguagem" [(ngModel)]="linguagem">
+<div [ngSwitch]="linguagem">
+  <p *ngSwitchCase="'HTML'">Linguagem de Marcação</p>
+  <p *ngSwitchCase="'CSS'">Linguagem de Estilo</p>
+  <p *ngSwitchCase="'JS'">Linguagem de Programação</p>
+  <p *ngSwitchDefault>Linguagem não encontrada</p>
+</div>
+
+<hr>
+
+<form [formGroup]="form">
+  <input type="text" formControlName="nome" placeholder="Nome">
+  <p>{{form.value.nome}}</p>
+  <input type="number" formControlName="idade" placeholder="Idade">
+  <p>{{form.value.idade}}</p>
+  <input type="text" formControlName="cidade" placeholder="Cidade">
+  <p>{{form.value.cidade}}</p>
+</form>
