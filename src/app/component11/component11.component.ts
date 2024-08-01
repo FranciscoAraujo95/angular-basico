@@ -1,16 +1,20 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+import {FormControl, FormGroup, ReactiveFormsModule} from "@angular/forms";
 
 @Component({
   selector: 'app-component11',
   standalone: true,
-  imports: [],
+  imports: [ReactiveFormsModule],
   templateUrl: './component11.component.html',
   styleUrl: './component11.component.css'
 })
 export class Component11Component {
 
-  //Variables
-  name: string;
-  idade: number = null;
+  form = new FormGroup({
+    name  : new FormControl(''),
+    age   : new FormControl(null),
+    city  : new FormControl('')
+
+  });
 
 }
